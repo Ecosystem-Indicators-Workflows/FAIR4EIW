@@ -28,11 +28,9 @@ cp -R fair-kit/.fair fair-kit/.github <path-to-workflow-repo>/
 Then:
 
 1. Edit `.fair/fair-checklist.yml` (formats, website, hints).
-2. Optionally put the markers where the section should appear in the README;
+2. Put the markers where the section should appear in the README;
    otherwise it is appended at the end.
-3. In GitHub: **Settings → Actions → General → Workflow permissions →
-   Read and write permissions**.
-4. Commit and merge to `main`. The section appears after the first run;
+3. Commit and merge to `main`. The section appears after the first run;
    **Actions → FAIR check → Run workflow** runs it on demand.
 
 Run locally from the repository root:
@@ -45,3 +43,14 @@ Rscript .fair/fair_check.R
 
 Change `.fair/fair_check.R` here, then copy it into each workflow repository.
 Each detection rule is one function named after its ARDC question ID.
+
+## Steps
+
+1. Bring three files with exact folder locations to your new workflow repo
+2. Make sure the `.fair/fair-checklist.yml` is all reflecting the current process of the workflow we are assessing.
+3. Put markers in `README.md`
+   ```
+   <!-- FAIR:START -->
+    <!-- FAIR:END -->
+   ```
+4. run locally from your branch to test
