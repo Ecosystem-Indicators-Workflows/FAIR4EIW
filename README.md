@@ -51,6 +51,6 @@ Each detection rule is one function named after its ARDC question ID.
 3. Put markers in `README.md`
    ```
    <!-- FAIR:START -->
-    <!-- FAIR:END -->
+   <!-- FAIR:END -->
    ```
 4. run locally from your branch to test
